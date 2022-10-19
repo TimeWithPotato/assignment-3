@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming's Daddy</title>
+    <!-- Favicon ICOn -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Uni Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Tailwind Component Flowbite CSS Libary -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    spacing: {
+                        '97': '40rem',
+                        '98': '40rem',
+                        '100': '28rem',
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('images/cover/cover-1.jpg')",
+                    },
+                    colors: {
+                        bodyColor: '#151719',
+                        headingColor: 'rgb(217, 227, 234)',
+                        paragraphColor: 'rgb(155, 169, 180)',
+                        workingColor: '#F4FAFD',
+                        primaryColor: '#4F46E5',
+                    },
+                    width: {
+                        'tenSpace': '48%',
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-bodyColor">
+    <!-- Navbar Section Start -->
+    <nav class="border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-black-700" id="home">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex items-center">
+                <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">Programming's Daddy</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="hidden  md:mr-5 lg:mr-0 hover:border-transparent lg:flex md:flex text-xl font-bold text-primaryColor hover:bg-primaryColor hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-5 py-2.5 text-center mr-3 dark:bg-transparent border-2 border-primaryColor dark:hover:bg-primaryColor dark:focus:ring-primaryColor">Register</button>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center md:pb-4 lg:pb-0 w-full lg:flex md:w-full lg:w-auto md:order-2 lg:order-1"
+                id="navbar-cta">
+                <ul
+                    class="flex flex-col md:flex-col lg:flex-row p-4 lg:p-0 lg:mt-0 mt-4 bg-gray-50 rounded-lg lg:rounded-none lg:border-0 border border-gray-100  md:text-sm md:font-medium dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li class="lg:block">
+                        <a href="#home"
+                            class="text-xl font-medium block py-2 pr-4 pl-3 text-white bg-primaryColor lg:bg-transparent rounded  dark:text-white"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li class="lg:block md:pl-0">
+                        <a href="#courses"
+                            class="text-xl font-medium block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primaryColor md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Courses</a>
+                    </li>
+                    <li class="lg:block md:pl-0">
+                        <a href="#about"
+                            class="text-xl font-medium block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primaryColor md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li class="lg:block md:pl-0">
+                        <a href="#student"
+                            class="text-xl font-medium block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primaryColor md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Student</a>
+                    </li>
+                    <li class="lg:block">
+                        <a href="#faq"
+                            class="text-xl font-medium block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primaryColor md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FAQ</a>
+                    </li>
+                    <li class="md:hidden lg:block">
+                        <a href="#contact"
+                            class="text-xl font-medium block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primaryColor md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+    <main>
+        <!-- Slider Section Start -->
+        <div id="default-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="overflow-hidden relative h-96 md:h-98 lg:h-97">
+                <!-- Item 1 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all bg-[url('images/cover/cover-1.png')] bg-center bg-cover transform translate-x-0 z-20"
+                    data-carousel-item="">
+
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h1 class="text-2xl md:text-5xl lg:text-6xl text-center mb-5 font-bold text-white">Learn Digital
+                            Marketing</h1>
+                        <p class="text-base lg:text-xl fw-bold text-center text-gray-300 mb-8">Digital marketing, also
+                            called online marketing, is the promotion of brands to connect with potential customers.</p>
+                        <button
+                            class="bg-primaryColor text-white px-3 py-1 lg:px-6 lg:py-4 font-bold text-base lg:text-xl rounded-md border-2 border-transparent hover:bg-transparent hover:border-white">Get
+                            Started</button>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all bg-[url('images/cover/cover-2.jpg')] bg-center bg-cover transform translate-x-0 z-20"
+                    data-carousel-item="">
+
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h1 class="text-2xl md:text-5xl lg:text-6xl text-center mb-5 font-bold text-white">Learn JS
+                            Advanced</h1>
+                        <p class="text-base lg:text-xl fw-bold text-center text-gray-300 mb-8">JavaScript, often
+                            abbreviated JS, is a programming language that is one of the core technologies of the World
+                            Wide Web, alongside HTML and CSS.</p>
+                        <button
+                            class="bg-primaryColor text-white px-3 py-1 lg:px-6 lg:py-4 font-bold text-base lg:text-xl rounded-md border-2 border-transparent hover:bg-transparent hover:border-white">Get
+                            Started</button>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all bg-[url('images/cover/cover-3.jpg')] bg-center bg-cover transform translate-x-0 z-20"
+                    data-carousel-item="">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h1 class="text-2xl md:text-5xl lg:text-6xl text-center mb-5 font-bold text-white">Learn UI/UX
+                            Design</h1>
+                        <p class="text-base lg:text-xl fw-bold text-center text-gray-300 mb-8">UX design refers to the
+                            term “user experience design”, while UI stands for “user interface design”.</p>
+                        <button
+                            class="bg-primaryColor text-white px-3 py-1 lg:px-6 lg:py-4 font-bold text-base lg:text-xl rounded-md border-2 border-transparent hover:bg-transparent hover:border-white">Get
+                            Started</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-white" aria-current="true"
+                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button"
+                    class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                    aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button"
+                    class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                    aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-prev="">
+                <span
+                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-primaryColor group-hover:bg-white dark:group-hover:bg-primaryColor group-focus:ring-4 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-next="">
+                <span
+                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-primaryColor group-hover:bg-white dark:group-hover:bg-primaryColor group-focus:ring-4 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <!-- Slider Section End -->
+        <!-- Courses Section start -->
+        <secttion id="courses">
+            <div class="container mx-auto my-20 px-2 md:px-0 lg:px-0">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-headingColor text-center mb-5">Our
+                    Courses</h2>
+                <p class="text-base text-paragraphColor text-center mb-10">Here is our popular courses that will help
+                    you to develop your skill fastly. Kindly Check it out How the course is.</p>
+                <!-- Items -->
+                <div class="course grid grid-cols-1 lg:grid-cols-2 gap-7 px-5 mb-12">
+                    <!-- Item 1 -->
+                    <div class="flex flex-col md:flex-row lg:flex-row items-center rounded-2xl bg-white">
+                        <img class="hidden md:block lg:block w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-1.png" alt="course details">
+                        <img class=" md:hidden lg:hidden w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-1.png" alt="course details">
+                        <div class="px-5 py-8">
+                            <h5 class="font-semibold text-2xl text-bodyColor mb-3">Basic UI/UX Design</h5>
+                            <p class="text-base text-gray-700 font-medium mb-3">UI UX Fundamentals and Intermediate
+                                Level Course Outline.</p>
+                            <span class="text-lg font-bold text-primaryColor">Price : 50$</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex flex-col md:flex-row lg:flex-row items-center rounded-2xl bg-white">
+                        <img class="hidden md:block lg:block w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-2.png" alt="course details">
+                        <img class=" md:hidden lg:hidden w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-2.png" alt="course details">
+                        <div class="px-5 py-8">
+                            <h5 class="font-semibold text-2xl text-bodyColor mb-3">Javascript Intermediate Level</h5>
+                            <p class="text-base text-gray-700 font-medium mb-3">JS Function, Array, Loop, ES6, API etc
+                                is the outline of this course.</p>
+                            <span class="text-lg font-bold text-primaryColor">Price : 100$</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex flex-col md:flex-row lg:flex-row items-center rounded-2xl bg-white">
+                        <img class="hidden md:block lg:block w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-3.png" alt="course details">
+                        <img class=" md:hidden lg:hidden w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-3.png" alt="course details">
+                        <div class="px-5 py-8">
+                            <h5 class="font-semibold text-2xl text-bodyColor mb-3">Fullstack Web Development</h5>
+                            <p class="text-base text-gray-700 font-medium mb-3">HTML, CSS, JS, REACT, MONGODB, NODE are
+                                the outline of this course.</p>
+                            <span class="text-lg font-bold text-primaryColor">Price : 200$</span>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex flex-col md:flex-row lg:flex-row items-center rounded-2xl bg-white">
+                        <img class="hidden md:block lg:block w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-4.png" alt="course details">
+                        <img class=" md:hidden lg:hidden w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-4.png" alt="course details">
+                        <div class="px-5 py-8">
+                            <h5 class="font-semibold text-2xl text-bodyColor mb-3">Digital Marketing</h5>
+                            <p class="text-base text-gray-700 font-medium mb-3">Digital Marketing is the trending of
+                                this time. So Check it out.</p>
+                            <span class="text-lg font-bold text-primaryColor">Price : 100$</span>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="flex flex-col md:flex-row lg:flex-row items-center rounded-2xl bg-white">
+                        <img class="hidden md:block lg:block w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-5.png" alt="course details">
+                        <img class=" md:hidden lg:hidden w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-5.png" alt="course details">
+                        <div class="px-5 py-8">
+                            <h5 class="font-semibold text-2xl text-bodyColor mb-3">Photography</h5>
+                            <p class="text-base text-gray-700 font-medium mb-3">Advanced Level Of Photography will be
+                                learned in this course.</p>
+                            <span class="text-lg font-bold text-primaryColor">Price : 50$</span>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="flex flex-col md:flex-row lg:flex-row items-center rounded-2xl bg-white">
+                        <img class="hidden md:block lg:block w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-6.png" alt="course details">
+                        <img class=" md:hidden lg:hidden w-full md:w-auto lg:w-auto pr-0 md:pr-0 lg:pr-0"
+                            src="images/course/course-6.png" alt="course details">
+                        <div class="px-5 py-8">
+                            <h5 class="font-semibold text-2xl text-bodyColor mb-3">Motion Graphics</h5>
+                            <p class="text-base text-gray-700 font-medium mb-3">Motion Graphics is highly recommend in
+                                this modern world. So, Check it out.</p>
+                            <span class="text-lg font-bold text-primaryColor">Price : 150$</span>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="bg-primaryColor text-white px-3 py-1 lg:px-6 lg:py-4 font-bold text-base lg:text-xl rounded-md border-2 border-transparent hover:bg-transparent hover:border-white mx-auto block">See
+                    More Courses</button>
+            </div>
+        </secttion>
+        <!-- Courses Section End -->
+        <section class="py-12" id="about">
+            <div
+                class="container mx-auto bg-workingColor flex flex-col md:flex-row lg:flex-row items-center justify-between">
+                <div class="w-full md:w-tenSpace lg:w-tenSpace">
+                    <img src="images/working.png" alt="">
+                </div>
+                <div class="w-full md:w-tenSpace lg:w-tenSpace p-8 md:p-0 md:pr-8 lg:pr-8">
+                    <h3 class="text-2xl md:text-2xl lg:text-4xl text-bodyColor font-bold mb-5 md:mb-2 lg:mb-5">Explore
+                        The
+                        elearning Process</h3>
+                    <p class="text-base text-justify text-slate-800 mb-5">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure.
+                        <br><br>
+                        Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                        Internet
+                        tend to repeat predefined.
+                    </p>
+                    <div class="flex justify-between mb-5 md:mb-5 lg:mb-12">
+                        <div>
+                            <h3 class="text-2xl md:text-2xl lg:text-4xl font-bold mb-1">2.2K+</h3>
+                            <p class="text-base text-slate-800">Online Courses</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl md:text-2xl lg:text-4xl font-bold mb-1">500+</h3>
+                            <p class="text-base text-slate-800">Pro member</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl md:text-2xl lg:text-4xl font-bold mb-1">2k+</h3>
+                            <p class="text-base text-slate-800">Good Review</p>
+                        </div>
+                    </div>
+                    <button
+                        class="bg-primaryColor text-white px-3 py-1 lg:px-6 lg:py-4 font-bold text-base lg:text-xl rounded-md border-2 border-transparent hover:bg-transparent hover:border-primaryColor hover:text-primaryColor">Read
+                        More</button>
+                </div>
+            </div>
+        </section>
+        <!-- Join Section Start -->
+        <section id="join" class="py-12">
+            <div
+                class="container mx-auto px-12 py-20 bg-primaryColor flex flex-col text-center lg:text-left lg:flex-row justify-between items-center">
+                <div class="mb-8 lg:mb-0">
+                    <h2 class="text-5xl text-white font-bold mb-5">Ready to join?</h2>
+                    <p class="text-base text-gray-100">You can register for more updates and news. We are very glad to
+                        see you and Kindly fill up the form.</p>
+                </div>
+                <div class="lg:w-1/4 text-right">
+                    <button
+                        class="bg-white text-primaryColor px-3 py-1 lg:px-5 lg:py-4 font-bold text-base lg:text-xl rounded-md border-2 border-transparent hover:bg-transparent hover:text-white hover:border-white"
+                        type="button" data-modal-toggle="authentication-modal">Register Now</button>
+                </div>
+
+            </div>
+            <!-- Main modal -->
+            <div id="authentication-modal" tabindex="-1"
+                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center flex"
+                aria-modal="true" role="dialog">
+                <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <button type="button"
+                            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                            data-modal-toggle="authentication-modal">
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                        <div class="py-6 px-6 lg:px-8">
+                            <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform
+                            </h3>
+                            <form class="space-y-6" action="#">
+                                <div>
+                                    <label for="email"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                                        email</label>
+                                    <input type="email" name="email" id="email"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                        placeholder="name@company.com" required="">
+                                </div>
+                                <div>
+                                    <label for="password"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                                        password</label>
+                                    <input type="password" name="password" id="password" placeholder="••••••••"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                        required="">
+                                </div>
+                                <div class="flex justify-between">
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="remember" type="checkbox" value=""
+                                                class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                                                required="">
+                                        </div>
+                                        <label for="remember"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
+                                            me</label>
+                                    </div>
+                                    <a href="#"
+                                        class="text-sm text-primaryColor hover:underline dark:text-blue-500">Lost
+                                        Password?</a>
+                                </div>
+                                <button type="submit" data-modal-toggle="authentication-modal"
+                                    class="w-full text-white bg-primaryColor hover:bg-primaryColor focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-primaryColor dark:focus:ring-primaryColor">Login
+                                    to your account</button>
+                                <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                                    Not registered? <a href="#"
+                                        class="text-primaryColor hover:underline dark:text-blue-500">Create account</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Join Section End -->
+        <!-- Meet Student Section Start -->
+        <section id="student" class="pt-12 pb-0">
+            <div class="container mx-auto px-5">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl text-headingColor text-center font-bold mb-5">Our
+                    Successfull Students</h2>
+                <p class="text-base text-center text-gray-100 mb-20">Here are our some student who are Successfull in
+                    their journey. Nowadays they are working on a giant tech company.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <!-- Student 1 -->
+                    <div
+                        class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <a class="w-full" href="#">
+                            <img class="rounded-t-lg" src="images/student/student-1.png" alt="">
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Motasim Abid</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">UIUX Designer</p>
+                        </div>
+                    </div>
+                    <!-- Student 2 -->
+                    <div
+                        class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <a class="w-full" href="#">
+                            <img class="rounded-t-lg" src="images/student/student-2.png" alt="">
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Naima Zama Roshni</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Motion Design</p>
+                        </div>
+                    </div>
+                    <!-- Student 3 -->
+                    <div
+                        class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <a class="w-full" href="#">
+                            <img class="rounded-t-lg" src="images/student/student-3.png" alt="">
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Maksurat Kamal</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Graphic Designer</p>
+                        </div>
+                    </div>
+                    <!-- Student 4 -->
+                    <div
+                        class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <a class="w-full" href="#">
+                            <img class="rounded-t-lg" src="images/student/student-4.png" alt="">
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Dahika Alam</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-12">
+                    <button
+                        class="bg-primaryColor text-white px-3 py-1 md:px-7 md:py-4 lg:px-7 lg:py-4 font-bold text-base lg:text-xl rounded-md border-2 border-transparent hover:bg-transparent hover:border-white mx-auto block">View
+                        All</button>
+                </div>
+            </div>
+        </section>
+        <!-- Meet Student Section End -->
+        <!-- Feedback Setion Start -->
+        <!-- Large Device FeedBack Start -->
+        <section id="feedback" class="py-20 hidden md:hidden lg:block">
+            <div class="container mx-auto px-5">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl text-headingColor text-center font-bold mb-3">Students
+                    Feedback</h2>
+                <p class="text-base text-center text-gray-100 mb-5">Many Student are very pleased to enrolled our
+                    course. So they are reviewing for our courses. Here are some Review.</p>
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-56 rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="flex flex-col md:flex-col lg:flex-row gap-5">
+                                <div class="bg-gray-800 p-5 rounded-lg">
+                                    <div class="flex justify-between mb-5">
+                                        <img src="images/comma.png" alt="Review">
+                                        <div class="">
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-lg uil uil-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-5 text-headingColor text-justify">
+                                        A web developer are pieces of animation or digital footage which create the
+                                        illusion of motion or rotation, and are usually combined with audio for use in
+                                        multimedia projects. Motion graphics are usually displayed.
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img class="mr-5" src="images/student/student-5.png" alt="Review">
+                                        <div>
+                                            <h5 class="text-white font-bold text-lg">A.K Khan</h5>
+                                            <p class="text-headingColor">Web Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-800 p-5 rounded-lg">
+                                    <div class="flex justify-between mb-5">
+                                        <img src="images/comma.png" alt="">
+                                        <div class="">
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-lg uil uil-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-5 text-headingColor text-justify">
+                                        A UI review are pieces of animation or digital footage which create the
+                                        illusion of motion or rotation, and are usually combined with audio for use in
+                                        multimedia projects. Motion graphics are usually displayed.
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img class="mr-5" src="images/student/student-6.png" alt="">
+                                        <div>
+                                            <h5 class="text-white font-bold text-lg">Fahima Islam</h5>
+                                            <p class="text-headingColor">UI Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="flex flex-col md:flex-col lg:flex-row gap-5">
+                                <div class="bg-gray-800 p-5 rounded-lg">
+                                    <div class="flex justify-between mb-5">
+                                        <img src="images/comma.png" alt="Review">
+                                        <div class="">
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-lg uil uil-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-5 text-headingColor text-justify">
+                                        Motion graphics are pieces of animation or digital footage which create the
+                                        illusion of motion or rotation, and are usually combined with audio for use in
+                                        multimedia projects. Motion graphics are usually displayed.
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img class="mr-5" src="images/student/student-7.png" alt="Review">
+                                        <div>
+                                            <h5 class="text-white font-bold text-lg">Jennifer</h5>
+                                            <p class="text-headingColor">Motion Graphics</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-800 p-5 rounded-lg">
+                                    <div class="flex justify-between mb-5">
+                                        <img src="images/comma.png" alt="">
+                                        <div class="">
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-lg uil uil-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-5 text-headingColor text-justify">
+                                        Digital marketing are pieces of animation or digital footage which create the
+                                        illusion of motion or rotation, and are usually combined with audio for use in
+                                        multimedia projects. Motion graphics are usually displayed
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img class="mr-5" src="images/student/student-8.png" alt="">
+                                        <div>
+                                            <h5 class="text-white font-bold text-lg">Pitbull</h5>
+                                            <p class="text-headingColor">Digital Marker</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="flex flex-col md:flex-col lg:flex-row gap-5">
+                                <div class="bg-gray-800 p-5 rounded-lg">
+                                    <div class="flex justify-between mb-5">
+                                        <img src="images/comma.png" alt="Review">
+                                        <div class="">
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-lg uil uil-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-5 text-headingColor text-justify">
+                                        Front-end developers are the experts who build and maintain the mechanisms that
+                                        process data and perform actions on websites. Unlike front-end developers, who
+                                        control everything you can see on a website.
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img class="mr-5" src="images/student/student-9.png" alt="Review">
+                                        <div>
+                                            <h5 class="text-white font-bold text-lg">Gal Gadot</h5>
+                                            <p class="text-headingColor">Front End Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-800 p-5 rounded-lg">
+                                    <div class="flex justify-between mb-5">
+                                        <img src="images/comma.png" alt="">
+                                        <div class="">
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-orange-200 text-lg uil uil-star"></i>
+                                            <i class="text-lg uil uil-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-5 text-headingColor text-justify">
+                                        Back-end developers are the experts who build and maintain the mechanisms that
+                                        process data and perform actions on websites. Unlike front-end developers, who
+                                        control everything you can see on a website.
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img class="mr-5" src="images/student/student-10.png" alt="">
+                                        <div>
+                                            <h5 class="text-white font-bold text-lg">John Cena</h5>
+                                            <p class="text-headingColor">Backend Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-white" aria-current="true"
+                            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                            aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-prev="">
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10  group-hover:bg-white dark:group-hover:bg-primaryColor group-focus:ring-4 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7">
+                                </path>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-next="">
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10  group-hover:bg-white dark:group-hover:bg-primaryColor group-focus:ring-4 group-focus:outline-none">
+                            <svg aria-hidden="true" class=" h-5 w-5 text-white sm:w-6 sm:h-6 dark:text-white"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Large Device FeedBack End -->
+        <!-- Medium Device FeedBack Start -->
+        <section id="feedback" class="py-20 md:block lg:hidden block">
+            <div class="container mx-auto px-5">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl text-headingColor text-center font-bold mb-3">Students
+                    Feedback</h2>
+                <p class="text-base text-center text-gray-100 mb-0">Many Student are very pleased to enrolled our
+                    course. So they are reviewing for our courses. Here are some Review.</p>
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-100 rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="bg-gray-800 p-5 rounded-lg">
+                                <div class="flex justify-between mb-5">
+                                    <img src="images/comma.png" alt="Review">
+                                    <div class="">
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-lg uil uil-star"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-5 text-headingColor text-justify">
+                                    A web developer are pieces of animation or digital footage which create the
+                                    illusion of motion or rotation, and are usually combined with audio for use in
+                                    multimedia projects. Motion graphics are usually displayed.
+                                </p>
+                                <div class="flex items-center">
+                                    <img class="mr-5" src="images/student/student-5.png" alt="Review">
+                                    <div>
+                                        <h5 class="text-white font-bold text-lg">Vin Diesel</h5>
+                                        <p class="text-headingColor">Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="bg-gray-800 p-5 rounded-lg">
+                                <div class="flex justify-between mb-5">
+                                    <img src="images/comma.png" alt="">
+                                    <div class="">
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-lg uil uil-star"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-5 text-headingColor text-justify">
+                                    A UI review follows are pieces of animation or digital footage which create the
+                                    illusion of motion or rotation, and are usually combined with audio for use in
+                                    multimedia projects. Motion graphics are usually displayed.
+                                </p>
+                                <div class="flex items-center">
+                                    <img class="mr-5" src="images/student/student-6.png" alt="">
+                                    <div>
+                                        <h5 class="text-white font-bold text-lg">Michelle Rodriguez</h5>
+                                        <p class="text-headingColor">UI Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="bg-gray-800 p-5 rounded-lg">
+                                <div class="flex justify-between mb-5">
+                                    <img src="images/comma.png" alt="Review">
+                                    <div class="">
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-lg uil uil-star"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-5 text-headingColor text-justify">
+                                    Motion graphics are pieces of animation or digital footage which create the
+                                    illusion of motion or rotation, and are usually combined with audio for use in
+                                    multimedia projects. Motion graphics are usually displayed.
+                                </p>
+                                <div class="flex items-center">
+                                    <img class="mr-5" src="images/student/student-7.png" alt="Review">
+                                    <div>
+                                        <h5 class="text-white font-bold text-lg">Jordana Brewester</h5>
+                                        <p class="text-headingColor">Motion Graphics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="bg-gray-800 p-5 rounded-lg">
+                                <div class="flex justify-between mb-5">
+                                    <img src="images/comma.png" alt="">
+                                    <div class="">
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-lg uil uil-star"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-5 text-headingColor text-justify">
+                                    Digital marketing are pieces of animation or digital footage which create the
+                                    illusion of motion or rotation, and are usually combined with audio for use in
+                                    multimedia projects. Motion graphics are usually displayed
+                                </p>
+                                <div class="flex items-center">
+                                    <img class="mr-5" src="images/student/student-8.png" alt="">
+                                    <div>
+                                        <h5 class="text-white font-bold text-lg">Rock</h5>
+                                        <p class="text-headingColor">Digital Marker</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="bg-gray-800 p-5 rounded-lg">
+                                <div class="flex justify-between mb-5">
+                                    <img src="images/comma.png" alt="Review">
+                                    <div class="">
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-lg uil uil-star"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-5 text-headingColor text-justify">
+                                    Front-end developers are the experts who build and maintain the mechanisms that
+                                    process data and perform actions on websites. Unlike front-end developers, who
+                                    control everything you can see on a website.
+                                </p>
+                                <div class="flex items-center">
+                                    <img class="mr-5" src="images/student/student-9.png" alt="Review">
+                                    <div>
+                                        <h5 class="text-white font-bold text-lg">Kylie Jenner</h5>
+                                        <p class="text-headingColor">Front End Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="duration-700 ease-in-out flex items-center absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+                            <div class="bg-gray-800 p-5 rounded-lg">
+                                <div class="flex justify-between mb-5">
+                                    <img src="images/comma.png" alt="">
+                                    <div class="">
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-orange-200 text-lg uil uil-star"></i>
+                                        <i class="text-lg uil uil-star"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-5 text-headingColor text-justify">
+                                    Back-end developers are the experts who build and maintain the mechanisms that
+                                    process data and perform actions on websites. Unlike front-end developers, who
+                                    control everything you can see on a website.
+                                </p>
+                                <div class="flex items-center">
+                                    <img class="mr-5" src="images/student/student-10.png" alt="">
+                                    <div>
+                                        <h5 class="text-white font-bold text-lg">Paul Walker</h5>
+                                        <p class="text-headingColor">Backend Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-white" aria-current="true"
+                            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                            aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                            aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                            aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white dark:bg-white hover:bg-white dark:hover:bg-white"
+                            aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-prev="">
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10  group-hover:bg-white dark:group-hover:bg-primaryColor group-focus:ring-4 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7">
+                                </path>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-next="">
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10  group-hover:bg-white dark:group-hover:bg-primaryColor group-focus:ring-4 group-focus:outline-none">
+                            <svg aria-hidden="true" class=" h-5 w-5 text-white sm:w-6 sm:h-6 dark:text-white"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Medium Device FeedBack End -->
+        <!-- Feedback Setion End -->
+        <!-- FAQ Setion Start -->
+        <section id="faq" class="py-12">
+            <div class="container mx-auto px-5">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl text-headingColor text-center font-bold mb-5">Frequently
+                    Asked
+                    Questions</h2>
+                <p class="text-base text-center text-gray-100 mb-20">Here Are Some Famous Question About CSS Bootstrap,
+                    Tailwind. Here you can find important Question and answer about CSS.</p>
+                <div class="w-full lg:w-3/4 mx-auto">
+                    <div id="accordion-open" data-accordion="open">
+                        <h2 id="accordion-open-heading-1">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white"
+                                data-accordion-target="#accordion-open-body-1" aria-expanded="true"
+                                aria-controls="accordion-open-body-1">
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>What is the difference between flex and grid layout?</span>
+                                <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-1" class="" aria-labelledby="accordion-open-heading-1">
+                            <div
+                                class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">Grid and flexbox. The basic difference
+                                    between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for
+                                    layout in one dimension - either a row or a column. Grid was designed for
+                                    two-dimensional layout - rows, and columns at the same time.</p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-open-heading-2">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                data-accordion-target="#accordion-open-body-2" aria-expanded="false"
+                                aria-controls="accordion-open-body-2">
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>What is the difference between bootstrap and tailwind?</span>
+                                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
+                            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">Bootstrap comes with a set of
+                                    pre-styled responsive, mobile-first components that possess a definite UI kit.
+                                    Tailwind CSS uses a set of utility classes to create a neat UI with more flexibility
+                                    and uniqueness. Sites created using Bootstrap follow the generic pattern that makes
+                                    them look identical.</p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-open-heading-3">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                data-accordion-target="#accordion-open-body-3" aria-expanded="false"
+                                aria-controls="accordion-open-body-3">
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path>
+                                    </svg> What is CSS box model?</span>
+                                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
+                            <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">In web development, the CSS box model
+                                    refers to how HTML elements are modeled in browser engines and how the dimensions of
+                                    those HTML elements are derived from CSS properties. It is a fundamental concept for
+                                    the composition of HTML webpages.</p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-open-heading-4">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                data-accordion-target="#accordion-open-body-4" aria-expanded="false"
+                                aria-controls="accordion-open-body-4">
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path>
+                                    </svg> What is semantic tag in HTML5?</span>
+                                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-4">
+                            <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">Semantic HTML elements are those that
+                                    clearly describe their meaning in a human- and machine-readable way. Elements such
+                                    as < header> , < footer> and < article> are all considered semantic because they
+                                                accurately describe the purpose of the element and the type of content
+                                                that is inside them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Setion End -->
+        <section id="company" class="py-20 md:hidden hidden lg:block">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl text-headingColor text-center font-bold mb-5">Trusted by
+                    over
+                    1000+ companies</h2>
+                <div class="grid grid-cols-6 gap-5 text-center">
+                    <img class="w-3/4 mx-auto my-auto" src="images/company/company-1.png" alt="">
+                    <img class="w-3/4 mx-auto my-auto" src="images/company/company-2.png" alt="">
+                    <img class="w-3/4 mx-auto my-auto" src="images/company/company-3.png" alt="">
+                    <img class="w-3/4 mx-auto my-auto" src="images/company/company-4.png" alt="">
+                    <img class="w-3/4 mx-auto my-auto" src="images/company/company-5.png" alt="">
+                    <img class="w-3/4 mx-auto my-auto" src="images/company/company-6.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section Start -->
+    <footer id="contact" class="bg-gray-800 relative">
+        <div class="container mx-auto py-12">
+            <div>
+                <h2
+                    class="text-3xl text-primaryColor md:text-4xl lg:text-5xl text-headingColor text-center font-bold mb-5">
+                    Pro Programmer</h2>
+                <p class="text-base text-center text-gray-100 mb-6">
+                    Office-50, Dhanmondi<br>
+                    Mohammadpur, Dhaka-1207<br>
+                    <a href="#">Privacy Ploicy | Terms of use</a>
+                </p>
+                <div class="text-center">
+                    <a href="https://www.facebook.com" target="_blank"><i
+                            class="mr-2 bg-primaryColor text-white px-2 py-1 rounded-full text-base border-2 border-primaryColor border-transparent hover:border-primaryColor hover:bg-transparent hover:text-primaryColor  uil uil-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i
+                            class="mr-2 bg-primaryColor text-white px-2 py-1 rounded-full text-base border-2 border-primaryColor border-transparent hover:border-primaryColor hover:bg-transparent hover:text-primaryColor  uil uil-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i
+                            class="mr-2 bg-primaryColor text-white px-2 py-1 rounded-full text-base border-2 border-primaryColor border-transparent hover:border-primaryColor hover:bg-transparent hover:text-primaryColor  uil uil-twitter-alt"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i
+                            class=" bg-primaryColor text-white px-2 py-1 rounded-full text-base border-2 border-primaryColor border-transparent hover:border-primaryColor hover:bg-transparent hover:text-primaryColor uil uil-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#home" class="absolute bottom-7 right-8"><i
+                class=" bg-primaryColor text-white px-2 py-1 rounded-2 text-lg border-2 border-primaryColor border-transparent hover:border-primaryColor hover:bg-transparent hover:text-primaryColor uil-arrow-up"></i></a>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Tailwind Component Flowbite Libary JS -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+</body>
+
+</html>
